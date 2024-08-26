@@ -24,18 +24,3 @@ dist-ssr
 *.sw?
 
 # Ignore everything in the parent directory
-../AdminErrorFront/
-../AdminFront/
-../AdminLogin/
-../Front/
-../Polar_sleepless/
-../HTMLCSS-practice/
-../JavaScript-practice/
-../RHF-Zod-practice/
-../TypeScript-basic-practice/
-../TypeScript-intro-practice/
-../react-practice/
-../vite-practice/
-../UserFront/
-../WD/
-../test/
