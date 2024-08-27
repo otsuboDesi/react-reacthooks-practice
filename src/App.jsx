@@ -1,9 +1,10 @@
 import "./App.css";
-// import { LoginControl } from "./cpmponents/LoginControl";
-// import { IfContainer } from "./cpmponents/IfContainer";
-// import { MapContainer } from "./cpmponents/MapContainer";
-// import { EventContainer } from "./cpmponents/EventContainer";
-import { FormContainer } from "./cpmponents/FormContainer";
+// import { LoginControl } from "./components/LoginControl";
+// import { IfContainer } from "./components/IfContainer";
+// import { MapContainer } from "./components/MapContainer";
+// import { EventContainer } from "./components/EventContainer";
+// import { FormContainer } from "./components/FormContainer";
+import { InputSelectContainer } from "./components/InputSelectContainer";
 
 const App = () => {
   return (
@@ -12,7 +13,8 @@ const App = () => {
       <IfContainer />
       <MapContainer />
       <EventContainer /> */}
-      <FormContainer />
+      {/* <FormContainer /> */}
+      <InputSelectContainer />
     </div>
   );
 };
