@@ -26,7 +26,13 @@ const LoginControl = () => {
 };
 
 const App = () => {
-  return <LoginControl />;
+  const isReact = true;
+  return (
+    <>
+      <p>{isReact ? "Hello React!!!" : "Hello!"}</p>
+      <LoginControl />
+    </>
+  );
 };
 
 export default App;
