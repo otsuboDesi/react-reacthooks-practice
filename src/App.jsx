@@ -29,7 +29,11 @@ const App = () => {
   const isReact = true;
   return (
     <>
-      <p>{isReact ? "Hello React!!!" : "Hello!"}</p>
+      <p>{isReact ? "Hello React!!!1" : "Hello!"}</p>
+      {/* isReact === true */}
+      {isReact && <p>Hello React!!!2</p>}
+      {/* isReact === false */}
+      <p>{isReact || "Hello React!!!3"}</p>
       <LoginControl />
     </>
   );
