@@ -5,7 +5,8 @@ import "./App.css";
 // import { EventContainer } from "./components/EventContainer";
 // import { FormContainer } from "./components/FormContainer";
 // import { InputSelectContainer } from "./components/InputSelectContainer";
-import { RadioContainer } from "./components/RadioContainer";
+// import { RadioContainer } from "./components/RadioContainer";
+import { CheckBoxContainer } from "./components/CheckBoxContainer";
 
 const App = () => {
   return (
@@ -16,7 +17,8 @@ const App = () => {
       <EventContainer /> */}
       {/* <FormContainer /> */}
       {/* <InputSelectContainer /> */}
-      <RadioContainer />
+      {/* <RadioContainer /> */}
+      <CheckBoxContainer />
     </div>
   );
 };
