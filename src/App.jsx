@@ -37,11 +37,23 @@ const IfContainer = () => {
     </div>
   );
 };
+
+const MapContainer = () => {
+  const numbers = [2, 4, 6, 8];
+
+  const items = numbers.map((item) => <li key={item.toString()}>{item}</li>);
+  return (
+    <>
+      <ul>{items}</ul>
+    </>
+  );
+};
 const App = () => {
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
       <LoginControl />
       <IfContainer />
+      <MapContainer />
     </div>
   );
 };
