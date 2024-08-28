@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export const NameContainer = () => {
+export const HelloContainer = () => {
   const INITIAAL_NAME = "JavaScript";
 
   const [name, setName] = useState(INITIAAL_NAME);

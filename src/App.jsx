@@ -1,12 +1,12 @@
 import "./App.css";
 import { CountContainer } from "./conponents/CounterContainer";
-import { NameContainer } from "./conponents/NameContainer";
+import { HelloContainer } from "./conponents/HelloContainer";
 
 const App = () => {
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
       <CountContainer />
-      <NameContainer />
+      <HelloContainer />
     </div>
   );
 };
