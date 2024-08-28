@@ -1,12 +1,10 @@
 import "./App.css";
-import { CountContainer } from "./conponents/CounterContainer";
-import { HelloContainer } from "./conponents/HelloContainer";
+import { SampleComponent } from "./conponents/SampleComponent";
 
 const App = () => {
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-      <CountContainer />
-      <HelloContainer />
+      <SampleComponent />
     </div>
   );
 };
