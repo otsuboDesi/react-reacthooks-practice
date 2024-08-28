@@ -1,35 +1,50 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const INITIAL_COUNT = 0;
+  const INITIAAL_NAME = "JavaScript";
 
+  const [count, setCount] = useState(INITIAL_COUNT);
+  const [name, setName] = useState(INITIAAL_NAME);
+
+  const countIncrement = () => setCount((pre) => pre + 1);
+
+  const countDecriment = () => setCount((pre) => pre - 1);
+
+  const countReset = () => setCount(INITIAL_COUNT);
+
+  const handleChangeName = (e) => {
+    setName(e.target.value);
+  };
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+    <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+      <p>
+        Current Count: {count}
+        <br />
+        Initial count value: {INITIAL_COUNT}
       </p>
-    </>
-  )
-}
+      <div style={{ display: "flex", gap: 10 }}>
+        <button onClick={countIncrement}>Increment</button>
+        <button onClick={countDecriment}>Decrement</button>
+        <button onClick={countReset} style={{ background: "red" }}>
+          Reset
+        </button>
+      </div>
 
-export default App
+      <p>
+        Hello, {name}!!!!
+        <br />
+        Initial Name value: {INITIAAL_NAME}
+      </p>
+      <input
+        type="text"
+        onChange={(e) => {
+          handleChangeName(e);
+        }}
+      />
+    </div>
+  );
+};
+
+export default App;
